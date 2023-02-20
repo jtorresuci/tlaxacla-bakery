@@ -11,7 +11,7 @@ function App() {
       <Header logo="concha.png" companyName="Tlaxcala Bakery" />
       <Hero />
       <Product title="Freshly Made" description="At Tlaxcala Bakery, all of our breads and cakes are freshly made daily for the best flavor" photo="1.png" />
-      <YelpReviews/>
+      {/* <YelpReviews/> */}
     </div>
   );
 }
