@@ -6,16 +6,11 @@ import Carousel from 'react-bootstrap/Carousel';
 function YelpReviews() {
   const [reviews, setReviews] = useState([]);
 
-  const personalAccessToken = process.env.YELP_KEY;
+  const apiURI = process.env.REACT_APP_API_URI;
 
   // Fetch Yelp reviews on component mount
   useEffect(() => {
-    fetch('http://localhost:5000/reviews', {
-      headers: {
-        Authorization: `Bearer ${personalAccessToken}`,
-        'Content-Type': 'application/json',
-      },
-    })
+    fetch(apiURI)
       .then((response) => response.json())
       .then((data) => {
         setReviews(data.reviews.filter((review) => review.rating === 5));
