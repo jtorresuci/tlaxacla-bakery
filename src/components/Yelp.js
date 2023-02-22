@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+// import { IconName } from "react-icons/bs";
 
 function YelpReviews() {
   const [reviews, setReviews] = useState([]);
@@ -24,14 +26,14 @@ function YelpReviews() {
     <div className="container my-5">
       <h2 className="text-center">5-Star Yelp Reviews</h2>
       {reviews.length > 0 ? (
-        <Carousel interval={4000}>
+        <Carousel interval={4000} prevIcon={<BsChevronLeft />} nextIcon={<BsChevronRight />}>
           {reviews.map((review) => (
             <Carousel.Item key={review.id}>
               <Card style={{ minHeight: '300px', maxHeight: '350px' }}>
                 <Card.Body className="d-flex flex-column justify-content-center align-items-center">
                   <img src={review.user.image_url ? review.user.image_url : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"} alt={review.user.name} className="rounded-circle mb-3" style={{ height: '100px', width: '100px' }} />
                   <Card.Title className="text-center mb-0">{review.user.name}</Card.Title>
-                  <Card.Text className="text-center">{review.text}</Card.Text>
+                  <Card.Text className="text-center mb-3">{review.text}</Card.Text>
                 </Card.Body>
               </Card>
             </Carousel.Item>
