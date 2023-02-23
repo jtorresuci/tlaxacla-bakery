@@ -1,0 +1,49 @@
+.frame {
+    position: relative;
+    width: 100%;
+    border: 8px solid #B22222;
+    box-shadow: 0 0 0 8px #B22222;
+    border-radius: 20px;
+  }
+  
+  .frame-top,
+  .frame-right,
+  .frame-bottom,
+  .frame-left {
+    position: absolute;
+    background-color: #CD853F;
+    z-index: -1;
+  }
+  
+  .frame-top {
+    top: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: 20px;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .frame-right {
+    top: 12px;
+    right: -8px;
+    width: 20px;
+    height: calc(100% - 24px);
+    border-radius: 0 20px 20px 0;
+  }
+  
+  .frame-bottom {
+    bottom: -8px;
+    left: -8px;
+    width: calc(100% + 16px);
+    height: 20px;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .frame-left {
+    top: 12px;
+    left: -8px;
+    width: 20px;
+    height: calc(100% - 24px);
+    border-radius: 20px 0 0 20px;
+  }
+  
