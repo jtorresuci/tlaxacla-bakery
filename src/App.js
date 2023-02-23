@@ -11,7 +11,7 @@ const googleAnalytics = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
 
 function App() {
   return (
-    <div className="container shadow-lg p-3 mt-5 mb-5 bg-light rounded">
+    <div className="container shadow-lg p-3 mt-5 mb-5 ml-1 mr-1 bg-light rounded">
     <GoogleAnalytics trackingId={googleAnalytics} />
       {/* <Header logo="concha.png" companyName="Tlaxcala Bakery" /> */}
       <Hero />
