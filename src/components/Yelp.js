@@ -26,7 +26,7 @@ function YelpReviews() {
       <h2 className="text-center">5-Star Yelp Reviews</h2>
       <Reviews />
       {reviews.length > 0 ? (
-        <Carousel interval={4000}>
+        <Carousel interval={8000}>
           {reviews.map((review) => (
             <Carousel.Item key={review.id}>
               <Card style={{ minHeight: "300px", maxHeight: "350px" }}>
