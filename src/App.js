@@ -6,6 +6,7 @@ import Product from "./components/Product";
 import YelpReviews from "./components/Yelp";
 import Footer from "./components/Footer";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import SignatureFooter from "./components/SignatureFooter";
 
 const googleAnalytics = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
 
@@ -39,6 +40,7 @@ function App() {
           line2: "Santa Ana, CA 92707",
         }}
       />
+<SignatureFooter ninjalogo="ninjalogo.png" />
     </div>
   );
 }
