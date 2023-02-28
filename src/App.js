@@ -18,8 +18,8 @@ function App() {
     <div>
       <GoogleAnalytics trackingId={googleAnalytics} />
       {/* <Header logo="concha.png" companyName="Tlaxcala Bakery" /> */}
-  <Homepage/>
-<SignatureFooter ninjalogo="ninjalogo.png" />
+      <Homepage />
+      <SignatureFooter ninjalogo="ninjalogo.png" />
     </div>
   );
 }

@@ -43,10 +43,7 @@ function Homepage() {
               Tlaxcala Bakery
             </a>
           </h2>
-          <button
-            className="nav-button fa fa-bars"
-            onClick={handleButtonClick}
-          ></button>
+         
         </nav>
         <div className="center">
           <h1 className="alex-brush">Welcome</h1>
