@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./HomePage.css";
 import YelpReviews from "./Yelp";
+import Footerv2 from "./Footerv2";
 
 function Homepage() {
   useEffect(() => {
@@ -78,18 +79,7 @@ function Homepage() {
         ></div>
       </section>
 
-      <section className="bread-background center-h1">
-        <h1 className="custom-h1 alex-brush">
-          <span className="custom-font">Tasteful</span>
-          <br />
-          RECIPES
-        </h1>
-      </section>
-
-      <section>
-        <YelpReviews />
-      </section>
-
+     
       <section className="cake-background center-h1">
         <h1 className="custom-h1">
           <span className="custom-font alex-brush">Authentic Mexican</span>
@@ -129,59 +119,27 @@ function Homepage() {
         </div>
       </section>
 
+      <section className="bread-background center-h1">
+        <h1 className="custom-h1 alex-brush">
+          <span className="custom-font">Customers</span>
+          <br />
+          LOVE US
+        </h1>
+      </section>
+
+      <section>
+        <YelpReviews />
+      </section>
+
+
       <footer>
         <button onClick={handleButtonClick} className="to-top">
           <i className="fa fa-chevron-up"></i>TOP
         </button>
+<Footerv2/>
+        
 
-        <div className="restaurant-info">
-          <div className="locations">
-            <h4>LOCATIONS</h4>
-            <div className="location-1">
-              <h5>
-                1208 S. Standard Ave,
-                <br />
-                Santa Ana, CA &#8212; 92707
-              </h5>
-            </div>
-            <div className="location-2">
-              <h5>
-              3174 W Lincoln Ave Ste 104
-                <br />
-                Anaheim, CA &#8212; 92801
-              </h5>
-            </div>
-          </div>
-
-          <div className="hours">
-            <h4>HOURS</h4>
-            <div className="weekdays">
-              <h5>
-                Monday - Thursday
-                <br />
-                5:30pm - 10:00pm
-              </h5>
-            </div>
-
-            <div className="weekends">
-              <h5>
-                Contact Us
-                <br />
-                714-547-8265
-              </h5>
-            </div>
-
-            <div className="private-events">
-              <h5>
-                Available for private
-                <br />
-                events on Sunday
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <div className="copyright">
+        <div className="">
           <p>
             <small>
               Copyright 2014 &#169; Handcrafted with love by{" "}
@@ -189,7 +147,7 @@ function Homepage() {
             </small>
           </p>
           <p>
-            <small>Permissions and Copyright &#8226; Contact The Team</small>
+
           </p>
         </div>
       </footer>
