@@ -34,7 +34,7 @@ function Footerv2() {
           <h5>
             Anaheim &#8212; Monday - Sunday
             <br />
-            6:00am - 9:00pm
+            5:00am - 8:00pm
           </h5>
         </div>
 
