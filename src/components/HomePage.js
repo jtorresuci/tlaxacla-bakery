@@ -136,17 +136,7 @@ function Homepage(props) {
 <Footerv2/>
         
 
-        <div className="">
-          <p>
-            <small>
-              Copyright 2014 &#169;
-              <span>PixelGrade</span> Team
-            </small>
-          </p>
-          <p>
-
-          </p>
-        </div>
+     
       </footer>
     </div>
   );

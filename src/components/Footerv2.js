@@ -46,6 +46,17 @@ function Footerv2() {
           </h5>
         </div>
       </div>
+      <div className="">
+          <p>
+            <small>
+              Copyright 2014 &#169;
+              <span>PixelGrade</span> Team
+            </small>
+          </p>
+          <p>
+
+          </p>
+        </div>
     </div>
   )
 }
