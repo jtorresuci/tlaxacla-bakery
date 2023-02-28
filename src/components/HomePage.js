@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./HomePage.css";
+import YelpReviews from "./Yelp";
 
 function Homepage() {
   useEffect(() => {
@@ -31,7 +32,6 @@ function Homepage() {
         break;
     }
   };
-  
 
   return (
     <div>
@@ -39,14 +39,13 @@ function Homepage() {
         <nav>
           <h2>
             <a href="#" id="logo">
-              Tlaxcala Bakery 
+              Tlaxcala Bakery
             </a>
           </h2>
           <button
             className="nav-button fa fa-bars"
             onClick={handleButtonClick}
           ></button>
-          
         </nav>
         <div className="center">
           <h1 className="alex-brush">Welcome</h1>
@@ -65,12 +64,12 @@ function Homepage() {
           </h1>
           <h2>*</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
-            aspernatur beatae laboriosam dicta tempora ab, dolorem mollitia
-            perspiciatis, deleniti quidem dolor repellat animi. Quidem eligendi
-            iste distinctio fugit maxime modi. Lorem ipsum dolor sit amet.
+            At our bakery, we believe in using only the best ingredients to
+            create delicious, authentic handmade Mexican bread. Established in
+            1998, we started out selling our bread to supermarkets in Los
+            Angeles, and have since made our mark in Orange County.
           </p>
-          <a href="#">about us</a>
+          {/* <a href="#">about us</a> */}
         </div>
         <div
           className="stuffed-cherries"
@@ -87,51 +86,15 @@ function Homepage() {
         </h1>
       </section>
 
-      <section className="menu add-flex add-padding">
-        <div className="menu-images">
-          <img
-            src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/delikatesa4.jpg"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          />
-          <img
-            src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/delikatesa21.jpg"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          />
-          <img
-            src="https://www.gourmetsociety.co.uk/uploads/images/restaurants/093ce538894c95892f62dc93bb023636-image.png"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          />
-          <img
-            src="http://retrokitchenbar.com/wp-content/uploads/2014/05/menu-thumb-4-300x218.jpg"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          />
-        </div>
-        <div className="center-text">
-          <h1>
-            <span className="custom-font alex-brush">Discover</span>
-            <br />
-            MENU
-          </h1>
-          <h2>*</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
-            distinctio possimus tempore voluptatem, quo repellendus quas culpa
-            quasi, hic optio sapiente molestias necessitatibus, aliquam
-            excepturi consequatur a voluptates quam beatae!
-          </p>
-          <a href="#">view the full menu</a>
-        </div>
+      <section>
+        <YelpReviews />
       </section>
 
       <section className="cake-background center-h1">
         <h1 className="custom-h1">
-          <span className="custom-font alex-brush">The perfect</span>
+          <span className="custom-font alex-brush">Authentic Mexican</span>
           <br />
-          BLEND
+          BREAD
         </h1>
       </section>
 
@@ -144,21 +107,22 @@ function Homepage() {
           </h1>
           <h2>*</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi
-            odit in dignissimos neque ratione, laboriosam rerum! Deleniti
-            accusamus non, aliquam tempora, mollitia laborum ad, fugiat at
-            explicabo esse aut. Lorem ipsum dolor sit amet, adipisicing elit.
+            We take pride in serving our customers with the best authentic
+            handmade Mexican bread. Experience the lively flavors and rich
+            traditions of Mexico with every bite of our original pastries and
+            bread. Our tray of Mexican bread and pastries is ideal for any
+            occasion and will take your taste buds on a journey to Mexico.
           </p>
-          <a href="#">make a reservation</a>
+          {/* <a href="#">make a reservation</a> */}
         </div>
         <div>
           <img
-            src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/kulinarstvo11.jpg"
+            src="https://previews.dropbox.com/p/thumb/AB0ZHnFRrT1eRm6lt38lyo8OyM_nvuFgE-dZ8BtvxqCaa8yLQ_nEs9xEeLXOHyNVZdp5OWztvjbSXFfTJKX5Zpr73HyGjdxDvxy4K66kQUGK6AOBtRga18E9A4a2GQUT3h481A6-umVgsMMutMFZLUckPqrjV_YErkWa1rPVxEuDy5s0FFZozwsr_K5E05riZiXO-iKhPx_sOELd8ZQr7N9q8YDxurB0sp9PTrA4L4Dkmjl8doZXYXqxQLSDhrT1UiQ_i3WYrWb9si3YxmrmReMUqWpiAinYxfc3coMglHMYnZ3XLze7NDAc1B5-4zDRLo8EA52164fOIQPDOjYMfJg8GOFSG0Ab0DxSlPMKoHhk_l2--4c7QoQOhdaplZ7rpGs/p.png"
             data-aos="fade-up"
             data-aos-delay="300"
           />
           <img
-            src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/kulinarstvo21.jpg"
+            src="https://previews.dropbox.com/p/thumb/AB3XAsNnTS9mKic4wSrK8MPccUSxUEjSk0_wmXpoqUSaPEH_HIAecc9O34N7qIlfspoQIBWJnE1HdDuukkTkCEQduchI7OqEsyuVcHxf-WzM8yZn3F10IshK8dONV8-goJ3qR9Qc3Np38IT1y6fZLQ5-E6AV5Tl-8mAfPwGnWvYpwpSw1P7OucSrflaVPSBV1kbpQCObvrG87xZZoxcGdMEa0F0pHEPADMPJpCWTJFzjy2zQvLEzdsRsP5X6RDLjZg9XXRrLI4Pj0HL6PJp3CrtuuCk103_cL1o__x4si_NURSt0uDZMc5ctYlNdHEQV0VEUTH0bVU8XZAXDhdniFNKqXo4cJ8RofuPjTIoOyJFuvtOYgs4OjxwafaFd4hQr5e8/p.png"
             data-aos="fade-down"
             data-aos-delay="300"
           />
@@ -175,16 +139,16 @@ function Homepage() {
             <h4>LOCATIONS</h4>
             <div className="location-1">
               <h5>
-                376 Van Brun St
+                1208 S. Standard Ave,
                 <br />
-                Brooklyn, NY &#8212; 11231
+                Santa Ana, CA &#8212; 92707
               </h5>
             </div>
             <div className="location-2">
               <h5>
-                25 Union Square West
+              3174 W Lincoln Ave Ste 104
                 <br />
-                New York, NY &#8212; 10003
+                Anaheim, CA &#8212; 92801
               </h5>
             </div>
           </div>
@@ -201,9 +165,9 @@ function Homepage() {
 
             <div className="weekends">
               <h5>
-                Friday & Saturday
+                Contact Us
                 <br />
-                5:30pm - 11:00pm
+                714-547-8265
               </h5>
             </div>
 
