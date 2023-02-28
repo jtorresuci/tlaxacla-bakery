@@ -88,9 +88,9 @@ function Homepage(props) {
       <section className="add-flex reservation-section">
         <div className="center-text add-padding">
           <h1>
-            <span className="custom-font alex-brush">Culinary</span>
+            <span className="custom-font alex-brush">Mexican</span>
             <br />
-            DELIGHT
+            PRIDE
           </h1>
           <h2>*</h2>
           <p>
