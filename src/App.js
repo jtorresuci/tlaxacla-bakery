@@ -18,7 +18,7 @@ function App() {
     <div>
       <GoogleAnalytics trackingId={googleAnalytics} />
       {/* <Header logo="concha.png" companyName="Tlaxcala Bakery" /> */}
-      <Homepage />
+      <Homepage img1="1.png" img2="2.png" img3="3.png" />
       <SignatureFooter ninjalogo="ninjalogo.png" />
     </div>
   );

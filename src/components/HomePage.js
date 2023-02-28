@@ -5,7 +5,7 @@ import "./HomePage.css";
 import YelpReviews from "./Yelp";
 import Footerv2 from "./Footerv2";
 
-function Homepage() {
+function Homepage(props) {
   useEffect(() => {
     AOS.init({
       duration: 1800,
@@ -104,12 +104,12 @@ function Homepage() {
         </div>
         <div>
           <img
-            src="https://previews.dropbox.com/p/thumb/AB0ZHnFRrT1eRm6lt38lyo8OyM_nvuFgE-dZ8BtvxqCaa8yLQ_nEs9xEeLXOHyNVZdp5OWztvjbSXFfTJKX5Zpr73HyGjdxDvxy4K66kQUGK6AOBtRga18E9A4a2GQUT3h481A6-umVgsMMutMFZLUckPqrjV_YErkWa1rPVxEuDy5s0FFZozwsr_K5E05riZiXO-iKhPx_sOELd8ZQr7N9q8YDxurB0sp9PTrA4L4Dkmjl8doZXYXqxQLSDhrT1UiQ_i3WYrWb9si3YxmrmReMUqWpiAinYxfc3coMglHMYnZ3XLze7NDAc1B5-4zDRLo8EA52164fOIQPDOjYMfJg8GOFSG0Ab0DxSlPMKoHhk_l2--4c7QoQOhdaplZ7rpGs/p.png"
+            src={props.img2}
             data-aos="fade-up"
             data-aos-delay="300"
           />
           <img
-            src="https://previews.dropbox.com/p/thumb/AB3XAsNnTS9mKic4wSrK8MPccUSxUEjSk0_wmXpoqUSaPEH_HIAecc9O34N7qIlfspoQIBWJnE1HdDuukkTkCEQduchI7OqEsyuVcHxf-WzM8yZn3F10IshK8dONV8-goJ3qR9Qc3Np38IT1y6fZLQ5-E6AV5Tl-8mAfPwGnWvYpwpSw1P7OucSrflaVPSBV1kbpQCObvrG87xZZoxcGdMEa0F0pHEPADMPJpCWTJFzjy2zQvLEzdsRsP5X6RDLjZg9XXRrLI4Pj0HL6PJp3CrtuuCk103_cL1o__x4si_NURSt0uDZMc5ctYlNdHEQV0VEUTH0bVU8XZAXDhdniFNKqXo4cJ8RofuPjTIoOyJFuvtOYgs4OjxwafaFd4hQr5e8/p.png"
+            src={props.img3}
             data-aos="fade-down"
             data-aos-delay="300"
           />
@@ -139,7 +139,7 @@ function Homepage() {
         <div className="">
           <p>
             <small>
-              Copyright 2014 &#169; Handcrafted with love by{" "}
+              Copyright 2014 &#169;
               <span>PixelGrade</span> Team
             </small>
           </p>

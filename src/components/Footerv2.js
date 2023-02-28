@@ -25,9 +25,16 @@ function Footerv2() {
         <h4>HOURS</h4>
         <div className="weekdays">
           <h5>
-            Monday - Thursday
+            Santa Ana &#8212; Monday - Sunday
             <br />
-            5:30pm - 10:00pm
+            6:00am - 9:00pm
+          </h5>
+        </div>
+        <div className="weekdays">
+          <h5>
+            Anaheim &#8212; Monday - Sunday
+            <br />
+            6:00am - 9:00pm
           </h5>
         </div>
 
