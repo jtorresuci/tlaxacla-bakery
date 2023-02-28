@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import Reviews from "./Reviews";
+import "./Yelp.css"
 
 function YelpReviews() {
   const [reviews, setReviews] = useState([]);
@@ -29,7 +30,7 @@ function YelpReviews() {
         <Carousel interval={4000}>
           {reviews.map((review) => (
             <Carousel.Item key={review.id}>
-              <Card style={{ minHeight: "300px", maxHeight: "350px" }}>
+              <Card style={{ minHeight: "400px", maxHeight: "350px" }}>
                 <Card.Body className="d-flex flex-column justify-content-center align-items-center">
                   <img
                     src={
@@ -40,7 +41,9 @@ function YelpReviews() {
                     alt={review.user.name}
                     className="rounded-circle mb-3"
                     style={{ height: "100px", width: "100px" }}
-                  >{console.log(review.user)}</img>
+                  >
+                    {console.log(review.user)}
+                  </img>
                   <Card.Title className="text-center mb-0">
                     {review.user.name}
                   </Card.Title>
@@ -53,7 +56,7 @@ function YelpReviews() {
           ))}
         </Carousel>
       ) : (
-        <p>Loading...</p>
+        <div className="loader"></div>
       )}
     </div>
   );

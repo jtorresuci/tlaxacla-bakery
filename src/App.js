@@ -7,6 +7,7 @@ import YelpReviews from "./components/Yelp";
 import Footer from "./components/Footer";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import SignatureFooter from "./components/SignatureFooter";
+import CodePen from "./components/CodePen";
 
 const googleAnalytics = process.env.REACT_APP_GOOGLE_ANALYTICS_ID;
 

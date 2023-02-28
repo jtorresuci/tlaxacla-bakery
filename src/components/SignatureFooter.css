@@ -5,7 +5,7 @@
   }
   
   .signature-footer-logo {
-    height: 20px;
+    height: 12px;
     margin-right: 5px;
     margin-bottom: 16px;
   }
@@ -27,23 +27,23 @@
   @keyframes color-change-5x {
     0% {
       color: #19dcea;
-      text-shadow: 0 0 10px #19dcea;
+      text-shadow: 0 0 2px #19dcea;
     }
     25% {
       color: #b22cff;
-      text-shadow: 0 0 10px #b22cff;
+      text-shadow: 0 0 2px #b22cff;
     }
     50% {
       color: #ea2222;
-      text-shadow: 0 0 10px #ea2222;
+      text-shadow: 0 0 2px #ea2222;
     }
     75% {
       color: #f5be10;
-      text-shadow: 0 0 10px #f5be10;
+      text-shadow: 0 0 2px #f5be10;
     }
     100% {
       color: #3bd80d;
-      text-shadow: 0 0 10px #3bd80d;
+      text-shadow: 0 0 2px #3bd80d;
     }
   }
   
