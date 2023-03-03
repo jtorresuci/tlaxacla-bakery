@@ -593,3 +593,7 @@ footer .copyright span {
     opacity: 1;
   }
 }
+
+.wes-font {
+  font-family: 'WES' !important;
+}

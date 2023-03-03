@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 } */
+@font-face {
+  font-family: 'WES';
+  src: url('WES.TTF') format('truetype');
+}

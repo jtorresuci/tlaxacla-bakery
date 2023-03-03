@@ -38,18 +38,14 @@ function Homepage(props) {
     <div>
       <header>
         <nav>
-          <h2>
-            <a href="#" id="logo">
-              Tlaxcala Bakery
-            </a>
-          </h2>
+          
          
         </nav>
         <div className="center">
           <h1 className="alex-brush">Welcome</h1>
-          <h2>Tlaxcala Bakery</h2>
+          <h2 className="wes-font">TLAXCALA BAKERY</h2>
           <span id="asterisk">*</span>
-          <p>Authentic Mexican Bread</p>
+          <p className="wes-font">Authentic Mexican Bread</p>
         </div>
       </header>
 
